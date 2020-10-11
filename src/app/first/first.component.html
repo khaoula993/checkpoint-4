@@ -1,0 +1,15 @@
+<p [style.color]="two">first works!
+
+    it's always me : {{two}}
+</p>
+<hr>
+Change me if u can <input 
+                        #input
+                        type="text" 
+                        class="" 
+                        [value]='two'
+                        >
+<br>
+<button 
+(click)="show(input.value)"> show color
+</button>
