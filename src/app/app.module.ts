@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { from } from 'rxjs';
 import { FormsModule } from '@angular/forms';
+import { InterCComponent } from './inter-c/inter-c.component';
+import { InterfdeComponent } from './interfde/interfde.component';
+import { ChildComponent } from './child/child.component';
+import { DadComponent } from './dad/dad.component';
 
 
 
@@ -13,6 +17,10 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     FirstComponent,
+    InterCComponent,
+    InterfdeComponent,
+    ChildComponent,
+    DadComponent,
     
   ],
   imports: [
