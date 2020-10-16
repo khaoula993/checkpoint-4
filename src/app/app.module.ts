@@ -11,6 +11,11 @@ import { InterfdeComponent } from './interfde/interfde.component';
 import { ChildComponent } from './child/child.component';
 import { DadComponent } from './dad/dad.component';
 
+import { ListComponent } from './CV/list/list.component';
+import { ItemComponent } from './CV/item/item.component';
+import { DetailComponent } from './CV/detail/detail.component';
+import { CvComponent } from './CV/cv/cv.component';
+
 
 
 @NgModule({
@@ -21,6 +26,11 @@ import { DadComponent } from './dad/dad.component';
     InterfdeComponent,
     ChildComponent,
     DadComponent,
+
+    CvComponent,
+    ListComponent,
+    ItemComponent,
+    DetailComponent,
     
   ],
   imports: [
