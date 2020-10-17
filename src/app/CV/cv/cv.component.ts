@@ -8,6 +8,7 @@ import { Personne } from '../../model/Personne';
 })
 export class CvComponent implements OnInit {
   personne : Personne[];
+  selectedPersonne : Personne;
   constructor() { }
 
   ngOnInit() : void{
@@ -28,10 +29,10 @@ export class CvComponent implements OnInit {
         56789,
         'student',
         'img.jpeg'),
-
-    ];
-
-    
+    ];    
+  }
+  selectPersonne(personne){
+    this.selectedPersonne = personne;
   }
 
 }

@@ -15,6 +15,12 @@ import { ListComponent } from './CV/list/list.component';
 import { ItemComponent } from './CV/item/item.component';
 import { DetailComponent } from './CV/detail/detail.component';
 import { CvComponent } from './CV/cv/cv.component';
+import { MiniwordComponent } from './miniword/miniword.component';
+import { ThemeclassComponent } from './themeclass/themeclass.component';
+import { CommonModule } from '@angular/common';
+import { RaibowDirective } from './dir/raibow.directive';
+import { HighlightDirective } from './dir/highlight.directive';
+import { ShowParapgraphComponent } from './show-parapgraph/show-parapgraph.component';
 
 
 
@@ -31,12 +37,18 @@ import { CvComponent } from './CV/cv/cv.component';
     ListComponent,
     ItemComponent,
     DetailComponent,
+    MiniwordComponent,
+    ThemeclassComponent,
+    RaibowDirective,
+    HighlightDirective,
+    ShowParapgraphComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
 
   ],
   providers: [],
