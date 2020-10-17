@@ -1,5 +1,10 @@
 <ol class="list-group">
-    <app-item (selectedPersonne)="selectPersonne($event)" [personne]="personne[0]"></app-item>
-    <app-item (selectedPersonne)="selectPersonne($event)" [personne]="personne[1]"></app-item>
-
+    <app-item 
+    *ngFor="let p of personne"
+    [personne]="p"
+    (selectPersonne)="selectPersonne($event)" 
+    
+    >
+    </app-item>
+    
 </ol>

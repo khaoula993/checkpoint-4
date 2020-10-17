@@ -33,6 +33,7 @@ export class CvComponent implements OnInit {
   }
   selectPersonne(personne){
     this.selectedPersonne = personne;
+
   }
 
 }
