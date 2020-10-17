@@ -20,7 +20,7 @@ export class CvComponent implements OnInit {
         27,
         1234,
         'student',
-        'img.jpeg'),
+        'rotating_card_profile.png'),
       new Personne(
         2,
         'ouenniche',
@@ -28,7 +28,15 @@ export class CvComponent implements OnInit {
         26,
         56789,
         'student',
-        'img.jpeg'),
+        'rotating_card_profile2.png'),
+        new Personne(
+          3,
+          'hamza',
+          'khouloud',
+          16,
+          56789,
+          'student',
+          ''),
     ];    
   }
   selectPersonne(personne){
