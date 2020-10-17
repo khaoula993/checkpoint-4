@@ -14,7 +14,7 @@ export class ItemComponent implements OnInit {
   ngOnInit(): void {
   }
 selectPersonne(){
-  console.log(this.personne+'from item');
+  console.log(this.personne.name+'from item');
 this.selectedPersonne.emit(
   this.personne
   );

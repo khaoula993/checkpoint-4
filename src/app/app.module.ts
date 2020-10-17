@@ -21,6 +21,7 @@ import { CommonModule } from '@angular/common';
 import { RaibowDirective } from './dir/raibow.directive';
 import { HighlightDirective } from './dir/highlight.directive';
 import { ShowParapgraphComponent } from './show-parapgraph/show-parapgraph.component';
+import { DefaultImagePipe } from './default-image.pipe';
 
 
 
@@ -42,6 +43,7 @@ import { ShowParapgraphComponent } from './show-parapgraph/show-parapgraph.compo
     RaibowDirective,
     HighlightDirective,
     ShowParapgraphComponent,
+    DefaultImagePipe,
     
   ],
   imports: [
