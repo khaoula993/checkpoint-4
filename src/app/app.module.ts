@@ -22,6 +22,7 @@ import { RaibowDirective } from './dir/raibow.directive';
 import { HighlightDirective } from './dir/highlight.directive';
 import { ShowParapgraphComponent } from './show-parapgraph/show-parapgraph.component';
 import { DefaultImagePipe } from './default-image.pipe';
+import { TodoComponent } from './todo/todo.component';
 
 
 
@@ -44,6 +45,7 @@ import { DefaultImagePipe } from './default-image.pipe';
     HighlightDirective,
     ShowParapgraphComponent,
     DefaultImagePipe,
+    TodoComponent,
     
   ],
   imports: [
