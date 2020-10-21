@@ -24,6 +24,8 @@ import { ShowParapgraphComponent } from './show-parapgraph/show-parapgraph.compo
 import { DefaultImagePipe } from './default-image.pipe';
 import { TodoComponent } from './todo/todo.component';
 import { EmbauchecComponent } from './CV/embauchec/embauchec.component';
+import { Comp1Component } from './route/comp1/comp1.component';
+import { Comp2Component } from './route/comp2/comp2.component';
 
 
 
@@ -48,6 +50,8 @@ import { EmbauchecComponent } from './CV/embauchec/embauchec.component';
     DefaultImagePipe,
     TodoComponent,
     EmbauchecComponent,
+    Comp1Component,
+    Comp2Component,
     
   ],
   imports: [
