@@ -16,9 +16,7 @@ export class ListComponent implements OnInit {
   }
   selectPersonne(choice){
     console.log(choice);
-this.selectedPersonne.emit(
-  choice
-)
+this.selectedPersonne.emit(choice)
 
   }
 }

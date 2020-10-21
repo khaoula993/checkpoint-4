@@ -14,7 +14,7 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.personne);
   }
-embaucher(){
+  embaucherec(){
   this.embaucheService.embaucher(this.personne);
 }
 }

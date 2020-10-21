@@ -2,7 +2,7 @@
     <div>
         la liste des profils selectionnée :
     </div>
-    <span *ngFor="let personne for embauche">
+    <span *ngFor="let personne of embauche">
 {{personne?.firstname}} {{personne.name}}
 <img src="assets/images/{{personne?.path|defaultImage}}">
     </span>
