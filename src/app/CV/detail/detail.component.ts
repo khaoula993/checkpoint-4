@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Personne } from 'src/app/model/Personne';
+import { EmbaucheService } from '../services/embauche.service';
 
 @Component({
   selector: 'app-detail',
@@ -8,10 +9,12 @@ import { Personne } from 'src/app/model/Personne';
 })
 export class DetailComponent implements OnInit {
 @Input() personne : Personne;
-  constructor() { }
+  constructor(private embaucheService:EmbaucheService) { }
 
   ngOnInit(): void {
     console.log(this.personne);
   }
-
+embaucher(){
+  this.embaucheService.embaucher(this.personne);
+}
 }

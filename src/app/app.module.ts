@@ -23,6 +23,7 @@ import { HighlightDirective } from './dir/highlight.directive';
 import { ShowParapgraphComponent } from './show-parapgraph/show-parapgraph.component';
 import { DefaultImagePipe } from './default-image.pipe';
 import { TodoComponent } from './todo/todo.component';
+import { EmbauchecComponent } from './CV/embauchec/embauchec.component';
 
 
 
@@ -46,6 +47,7 @@ import { TodoComponent } from './todo/todo.component';
     ShowParapgraphComponent,
     DefaultImagePipe,
     TodoComponent,
+    EmbauchecComponent,
     
   ],
   imports: [
