@@ -27,6 +27,7 @@ import { EmbauchecComponent } from './CV/embauchec/embauchec.component';
 import { Comp1Component } from './route/comp1/comp1.component';
 import { Comp2Component } from './route/comp2/comp2.component';
 import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 
 
 
@@ -54,6 +55,7 @@ import { HeaderComponent } from './header/header.component';
     Comp1Component,
     Comp2Component,
     HeaderComponent,
+    RouterSimulatorComponent,
     
   ],
   imports: [
