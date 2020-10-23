@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
@@ -26,6 +26,7 @@ import { TodoComponent } from './todo/todo.component';
 import { EmbauchecComponent } from './CV/embauchec/embauchec.component';
 import { Comp1Component } from './route/comp1/comp1.component';
 import { Comp2Component } from './route/comp2/comp2.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -52,6 +53,7 @@ import { Comp2Component } from './route/comp2/comp2.component';
     EmbauchecComponent,
     Comp1Component,
     Comp2Component,
+    HeaderComponent,
     
   ],
   imports: [
