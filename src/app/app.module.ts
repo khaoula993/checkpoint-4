@@ -31,6 +31,7 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
 import { ColorComponent } from './color/color.component';
 import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
+import { DetailpersonComponent } from './CV/detailperson/detailperson.component';
 
 
 
@@ -63,6 +64,7 @@ import { BackComponent } from './back/back.component';
     ColorComponent,
     FrontComponent,
     BackComponent,
+    DetailpersonComponent,
 
     
   ],

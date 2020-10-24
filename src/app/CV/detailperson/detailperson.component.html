@@ -1,0 +1,28 @@
+<table class="table table-hover table-striped">
+<tbody>
+    <tr>
+        <td>
+            <strong>Name</strong> : {{personne?.firstname}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Last name</strong> : {{personne?.name}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Job</strong> : {{personne?.job}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>CIN</strong> : {{personne?.cin}}
+        </td>
+    </tr>
+</tbody>
+<button (click)="deletepersone()"
+class="btn btn-danger">
+    delete
+</button>
+</table>

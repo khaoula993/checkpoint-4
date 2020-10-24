@@ -8,12 +8,18 @@ import { TodoComponent } from './todo/todo.component';
 import { ColorComponent } from './color/color.component';
 import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
+import { DetailpersonComponent } from './CV/detailperson/detailperson.component';
 
 const routes: Routes = [
-  { path: '',  redirectTo: 'cv', pathMatch: 'full' },
+
   { path: 'comp1', component: Comp1Component },
   { path: 'comp2', component: Comp2Component },
-  { path: 'cv', component: CvComponent },
+  { path: 'cv' ,
+    children : [
+      { path:'',  component:CvComponent },
+      { path:':id',  component:DetailpersonComponent }
+    ]
+  },
 
   { path: 'todo', component: TodoComponent },
   { path: 'mini', component: MiniwordComponent },

@@ -36,5 +36,22 @@ private personne : Personne[];
    getpersonne() : Personne[] {
     return this.personne;
   }
-  
+  getpersonneByid(id):Personne{
+   return this.personne.find(
+  (pers:Personne) => pers.id ===+id
+);
+
+  }
+
+  deletepersone(personne : Personne){
+
+    const index=this.personne.indexOf(personne);
+    if(index ===-1){
+      alert('personne inexistant');
+      return 0;
+    }
+    else{
+      this.personne.splice(index,1)
+      return 1 ;}
+    }
 }
