@@ -28,6 +28,7 @@ import { Comp1Component } from './route/comp1/comp1.component';
 import { Comp2Component } from './route/comp2/comp2.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { ColorComponent } from './color/color.component';
 
 
 
@@ -56,6 +57,7 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
     Comp2Component,
     HeaderComponent,
     RouterSimulatorComponent,
+    ColorComponent,
     
   ],
   imports: [

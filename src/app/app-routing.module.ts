@@ -5,6 +5,8 @@ import { Comp2Component } from './route/comp2/comp2.component';
 import { CvComponent } from './CV/cv/cv.component';
 import { MiniwordComponent } from './miniword/miniword.component';
 import { TodoComponent } from './todo/todo.component';
+import { ColorComponent } from './color/color.component';
+
 
 const routes: Routes = [
   { path: 'comp1', component: Comp1Component },
@@ -12,6 +14,7 @@ const routes: Routes = [
   { path: 'cv', component: CvComponent },
   { path: 'todo', component: TodoComponent },
   { path: 'mini', component: MiniwordComponent },
+  { path: 'color/:color', component: ColorComponent }
 
 
 ];
