@@ -1,0 +1,18 @@
+<form #loginForm="ngForm">
+    <input type="text"
+    required
+    name="login"
+    ngModel
+    class="form-control">
+    <input type="password"
+    name="pwd"
+    required
+    ngModel
+    class="form-control">
+    <button class="btn btn-primary"
+    [disabled]="loginForm.invalid"
+    (click)="login(loginForm)">
+        login
+        
+    </button>
+</form>

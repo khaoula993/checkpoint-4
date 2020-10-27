@@ -32,6 +32,7 @@ import { ColorComponent } from './color/color.component';
 import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
 import { DetailpersonComponent } from './CV/detailperson/detailperson.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -65,6 +66,7 @@ import { DetailpersonComponent } from './CV/detailperson/detailperson.component'
     FrontComponent,
     BackComponent,
     DetailpersonComponent,
+    LoginComponent,
 
     
   ],

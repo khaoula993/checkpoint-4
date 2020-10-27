@@ -9,9 +9,10 @@ import { ColorComponent } from './color/color.component';
 import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
 import { DetailpersonComponent } from './CV/detailperson/detailperson.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-
+  { path: 'login', component: LoginComponent },
   { path: 'comp1', component: Comp1Component },
   { path: 'comp2', component: Comp2Component },
   { path: 'cv' ,

@@ -4,6 +4,7 @@ import { Personne } from 'src/app/model/Personne';
 import { CvService } from '../services/cv.service';
 
 const link =['cv'];
+
 @Component({
   selector: 'app-detailperson',
   templateUrl: './detailperson.component.html',
