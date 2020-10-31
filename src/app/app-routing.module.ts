@@ -10,14 +10,17 @@ import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
 import { DetailpersonComponent } from './CV/detailperson/detailperson.component';
 import { LoginComponent } from './login/login.component';
+import { AddComponent } from './CV/add/add.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'comp1', component: Comp1Component },
   { path: 'comp2', component: Comp2Component },
+
   { path: 'cv' ,
     children : [
       { path:'',  component:CvComponent },
+      { path: 'add', component: AddComponent },
       { path:':id',  component:DetailpersonComponent }
     ]
   },
@@ -25,18 +28,13 @@ const routes: Routes = [
   { path: 'todo', component: TodoComponent },
   { path: 'mini', component: MiniwordComponent },
   { path: 'color/:color', component: ColorComponent },
+
   { path: 'front', component: FrontComponent,
   children :[
     { path: 'color/:color', component: ColorComponent },
   ]
 },
-  { path: 'back', component: BackComponent,
-
-  children :[]
-
-}
-
-
+  { path: 'back', component: BackComponent}
 
 ];
 

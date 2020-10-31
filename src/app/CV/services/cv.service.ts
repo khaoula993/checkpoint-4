@@ -4,8 +4,10 @@ import { Personne } from 'src/app/model/Personne';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CvService {
 private personne : Personne[];
+
   constructor() {  this.personne=[
     new Personne(
       1,
@@ -33,14 +35,12 @@ private personne : Personne[];
         ''),
   ]; }
   
-   getpersonne() : Personne[] {
+  getpersonne() : Personne[] {
     return this.personne;
   }
   getpersonneByid(id):Personne{
    return this.personne.find(
-  (pers:Personne) => pers.id ===+id
-);
-
+  (pers:Personne) => pers.id ===+id );
   }
 
   deletepersone(personne : Personne){
@@ -53,5 +53,11 @@ private personne : Personne[];
     else{
       this.personne.splice(index,1)
       return 1 ;}
+    }
+
+   addPerson(personnes : Personne){
+      const id = this.personne[this.personne.length-1].id;
+      personnes.id=id+1;
+     this.personne.push(personnes); 
     }
 }

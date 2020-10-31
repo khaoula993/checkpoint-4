@@ -1,0 +1,54 @@
+<form #personform="ngForm"> 
+Name : 
+<input 
+ngModel
+name="name"
+required
+type="text" 
+class="form-control">
+
+FirstName:
+<input 
+ngModel
+name="fname"
+required
+type="text" 
+class="form-control">
+
+Job :
+<input
+ngModel
+name="job" 
+type="text" 
+class="form-control">
+
+Path :
+<input 
+ngModel
+name="path"
+type="text" 
+class="form-control">
+
+Age :
+<input 
+ngModel
+name="age"
+type="number" 
+
+class="form-control">
+
+Cin :
+<input 
+ngModel
+name="cin"
+required
+type="number" 
+class="form-control">
+
+</form>
+
+<button 
+[disabled]="personform.invalid"
+(click)="addPerson(personform.value)"
+class="btn btn-primary">
+Add person</button>
