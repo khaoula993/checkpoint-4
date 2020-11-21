@@ -34,6 +34,8 @@ import { BackComponent } from './back/back.component';
 import { DetailpersonComponent } from './CV/detailperson/detailperson.component';
 import { LoginComponent } from './login/login.component';
 import { AddComponent } from './CV/add/add.component';
+import { SliderobservableComponent } from './async/sliderobservable/sliderobservable.component';
+
 
 
 
@@ -69,6 +71,7 @@ import { AddComponent } from './CV/add/add.component';
     DetailpersonComponent,
     LoginComponent,
     AddComponent,
+    SliderobservableComponent,
 
     
   ],
