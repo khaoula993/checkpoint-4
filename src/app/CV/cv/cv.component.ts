@@ -10,7 +10,7 @@ import { CvService } from '../services/cv.service';
 })
 export class CvComponent implements OnInit {
   personne : Personne[];
-  selectedPersonne : Personne;
+ // selectedPersonne : Personne;
   constructor(
     private cvservice:CvService
   ) { }
@@ -18,9 +18,9 @@ export class CvComponent implements OnInit {
   ngOnInit() : void{
     this.personne=this.cvservice.getpersonne(); 
   }
-  selectPersonne(personne){
+  /*selectPersonne(personne){
     this.selectedPersonne = personne;
 
-  }
+  }*/
 
 }
