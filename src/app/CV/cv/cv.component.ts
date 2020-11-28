@@ -16,7 +16,7 @@ export class CvComponent implements OnInit {
   ) { }
 
   ngOnInit() : void{
-    this.personne=this.cvservice.getpersonne(); 
+    this.personne=this.cvservice.getFakepersonne(); 
   }
   /*selectPersonne(personne){
     this.selectedPersonne = personne;

@@ -1,18 +1,24 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { Personne } from 'src/app/model/Personne';
-
+const AP_LINK='https://immense-citadel-91115.herokuapp.com/api/personnes';
 @Injectable({
   providedIn: 'root'
 })
 
 export class CvService {
+
 private personne : Personne[];
 nbclick=0;
 clicksubject = new Subject<Number>();
 selectItelSubject = new Subject<Personne>();
 
-  constructor() {  this.personne=[
+  constructor(
+    private http :HttpClient
+
+  ) {  this.personne=[
     new Personne(
       1,
       'ouenniche',
@@ -39,13 +45,25 @@ selectItelSubject = new Subject<Personne>();
         ''),
   ]; }
   
-  getpersonne() : Personne[] {
+  getFakepersonne() : Personne[] {
     return this.personne;
   }
-  getpersonneByid(id):Personne{
+  getpersonne():Observable<Personne[]>{
+    return this.http.get<Personne[]>(AP_LINK);
+
+  }
+  getFakepersonneByid(id):Personne{
    return this.personne.find(
   (pers:Personne) => pers.id ===+id );
   }
+
+  getpersonneByid(id):Observable<Personne>{
+    
+    return this.http.get<Personne>(AP_LINK+id);
+
+
+  }
+
 
   deletepersone(personne : Personne){
 
@@ -72,4 +90,5 @@ selectItelSubject = new Subject<Personne>();
       console.log('je dispatch cette personne');
       this.selectItelSubject.next(personne);
     }
+    
 }

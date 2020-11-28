@@ -35,6 +35,7 @@ import { DetailpersonComponent } from './CV/detailperson/detailperson.component'
 import { LoginComponent } from './login/login.component';
 import { AddComponent } from './CV/add/add.component';
 import { SliderobservableComponent } from './async/sliderobservable/sliderobservable.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -79,7 +80,8 @@ import { SliderobservableComponent } from './async/sliderobservable/sliderobserv
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
 
   ],
   providers: [],

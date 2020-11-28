@@ -20,7 +20,10 @@ personne : Personne;
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(
       (params:Params)=>{
-       this.personne=this.cvservice.getpersonneByid(params.id);
+       this.cvservice.getpersonneByid(params.id).subscribe(
+         (personne)=>this.personne=personne,
+         (erreur)=>this.router.navigate(link)
+       );
       }
     );
   }

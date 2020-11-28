@@ -16,7 +16,12 @@ personne : Personne[];
   ) { }
 
   ngOnInit(): void {
-    this.personne=this.cvservice.getpersonne();
+   this.cvservice.getpersonne().subscribe(
+     (personne)=> this.personne=personne,
+     (erreur)=> {
+       this.personne=this.cvservice.getFakepersonne();
+       alert('probleme de cnx les dnées sont fakes')}
+   );
   }
  /* selectPersonne(choice){
     console.log(choice);
